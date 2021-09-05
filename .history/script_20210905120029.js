@@ -65,11 +65,10 @@ function handleKey(e) {
 // Clean/refresh function
 function clearCanvas() {
     canvas.classList.add('shake');
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+    ctx.lineWidth = MOVE_AMOUNT;
     ctx.clearRect(0, 0, width, height);
-    ctx.beginPath();
-    ctx.moveTo(x, y);
-    ctx.lineTo(x, y);
-    ctx.stroke();
     canvas.addEventListener('animationend', function(){
         console.log("Done the shake!")
         canvas.classList.remove('shake');

@@ -65,7 +65,7 @@ function handleKey(e) {
 // Clean/refresh function
 function clearCanvas() {
     canvas.classList.add('shake');
-    ctx.clearRect(0, 0, width, height);
+    ctx.clearRect(0, y, width, height);
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineTo(x, y);

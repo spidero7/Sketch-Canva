@@ -66,7 +66,7 @@ function handleKey(e) {
 function clearCanvas() {
     canvas.classList.add('shake');
     ctx.clearRect(0, 0, width, height);
-    ctx.beginPath();
+    ctx.beginPath(); // start the drawing
     ctx.moveTo(x, y);
     ctx.lineTo(x, y);
     ctx.stroke();
