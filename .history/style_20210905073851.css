@@ -1,0 +1,16 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    ba
+}
+
+canvas {
+    border: solid 10px forestgreen;
+    width: 80%;
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    background-color: white;
+}
